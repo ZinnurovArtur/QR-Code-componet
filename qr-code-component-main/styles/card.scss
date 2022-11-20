@@ -6,20 +6,31 @@
   width: 100%;
 }
 
+$card_padding: 20px;
+$card-bgcolor: white;
+$card_margin: 5px;
+$card_round: 10px;
+
 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
   .card {
     display: flex;
+    background-color: $card-bgcolor;
     flex-direction: column;
+    border-radius: $card_round;
+
     .card-figure {
       overflow: hidden;
-      border-radius: 0.5rem 0.5rem 0 0;
+      padding: $card_padding;
+      margin: $card_margin;
     }
     .card-body {
       flex: 1;
       padding: 1rem;
-
       border-width: 1px;
-      border-style: solid;
       border-radius: 0 0 0.5rem 0.5rem;
     }
   }
