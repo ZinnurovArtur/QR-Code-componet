@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+$outfit-400: 'Outfit',sans-serif;
+$font-size: 15px;
+$font-reqular:400;
+$font-bold:700;
+$grayish:#8A94A8;
+
+$mobile-width:375px;
+$desktop-width:1440px;
+
+body {
+    font-family: $outfit-400;
+    font-weight: $font-reqular;
+    background-color: #e9ecf3;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    font-family: $outfit-400;
+    font-weight: $font-reqular;
+}
+
+p {
+    font-size: $font-size;
+    font-family: $outfit-400;
+    font-weight: $font-reqular;
+    color: $grayish;
+}
+
+@mixin mobile {
+    @media (min-width:#{$mobile-width}) and (max-width:#{$desktop-width-1px}){
+        @content;
+    }
+    
+}
+
+@mixin desktop {
+    @media (min-width:#{$desktop-width}){
+        @content;
+    }
+    
+}
