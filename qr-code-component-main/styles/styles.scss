@@ -20,17 +20,17 @@ body {
 h1,
 h2 {
   font-family: $outfit-400;
-  font-weight: $font-reqular;
+  font-weight: $font-bold;
+  text-align: center;
 }
 
 p {
   font-size: $font-size;
   font-family: $outfit-400;
   font-weight: $font-reqular;
+  text-align: center;
   color: $grayish;
 }
-
-
 
 @mixin mobile {
   @media (min-width:#{$mobile-width}) and (max-width:#{$desktop-width-1px}) {

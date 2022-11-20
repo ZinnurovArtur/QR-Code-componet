@@ -30,6 +30,7 @@ $card_width: 300px;
     background-color: $card-bgcolor;
     flex-direction: column;
     border-radius: $card_round;
+    box-shadow: 0px 14px 15px -11px rgba(0,0,0,0.75);
 
     .card-figure {
       overflow: hidden;
